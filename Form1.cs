@@ -16,5 +16,37 @@ namespace Topic_13___Programming_Task_2
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (radQ1A1.Checked)
+            {
+                grpQ1.Visible = false;
+                lblQ1Result.Visible = true;
+                lblQ1Result.Text = "Answer: X";
+                grpQ2.Visible = true;
+                lblInvalid.Visible = false;
+            }
+            else if (radQ1A2.Checked)
+            {
+                grpQ1.Visible = false;
+                lblQ1Result.Visible = true;
+                lblQ1Result.Text = "Answer: X";
+                grpQ2.Visible = true;
+                lblInvalid.Visible = false;
+            }
+            else if (radQ1A3.Checked)
+            {
+                grpQ1.Visible = false;
+                lblQ1Result.Visible = true;
+                lblQ1Result.Text = "Answer: ✓";
+                grpQ2.Visible = true;
+                lblInvalid.Visible = false;
+            }
+            else
+            {
+                lblInvalid.Visible = true;
+            }
+        }
     }
 }
